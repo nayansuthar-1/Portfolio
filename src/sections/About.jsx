@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profileImg from '../assets/profile.png';
 
 const About = () => {
   return (
@@ -23,16 +24,15 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-dark-100 relative group"
+            className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-dark-100 relative"
           >
-            {/* Abstract aesthetic graphic instead of physical photo, since we don't have one */}
             <div className="aspect-square md:aspect-[4/3] bg-gradient-to-br from-dark-100 to-dark-300 flex items-center justify-center relative overflow-hidden">
-               <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+')] opacity-20"></div>
-               <div className="text-6xl font-bold font-outfit text-transparent bg-clip-text bg-gradient-to-br from-primary/40 to-sky-400/40 opacity-50 absolute rotate-[-15deg] scale-150 group-hover:scale-110 transition-transform duration-700">CODE</div>
-               <div className="text-6xl text-primary/80">&lt;/&gt;</div>
+               <img 
+                 src={profileImg} 
+                 alt="Nayan Suthar" 
+                 className="w-full h-full object-cover"
+               />
             </div>
-            
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-300 to-transparent opacity-60"></div>
           </motion.div>
 
           <motion.div
