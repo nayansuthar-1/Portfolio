@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profileImg from '../assets/profile.png';
+import profileImg from '../assets/nayan.jpeg';
 
 const About = () => {
   return (

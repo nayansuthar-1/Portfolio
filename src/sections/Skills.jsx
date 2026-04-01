@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub, FaWordpress, FaPhp } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiExpress, SiMongodb, SiFirebase, SiFlutter, SiDart } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
@@ -23,6 +23,7 @@ const skillCategories = [
       { name: 'Express.js', icon: SiExpress },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Firebase', icon: SiFirebase },
+      { name: 'PHP', icon: FaPhp },
     ]
   },
   {
@@ -38,6 +39,7 @@ const skillCategories = [
       { name: 'Git', icon: BiGitBranch },
       { name: 'GitHub', icon: FaGithub },
       { name: 'VS Code', icon: VscVscode },
+      { name: 'WordPress', icon: FaWordpress },
     ]
   }
 ];
